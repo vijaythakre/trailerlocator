@@ -1,0 +1,35 @@
+{
+  "name": "trailerlocator",
+  "version": "1.0.0",
+  "description": "API service to get Trailer URL for given Movie source.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "dotenv/config"
+    ],
+    "verbose": true
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "babel-jest": "^27.4.5",
+    "eslint": "^8.4.1",
+    "jest": "^27.4.5"
+  }
+}
